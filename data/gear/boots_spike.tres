@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearDef" format=3]
+
+[ext_resource type="Script" path="res://data/gear_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"bootsSpike"
+display_name = "Botas de tachas"
+slot = &"boots"
+power = 3
+description = "Suela con tachas de hierro: los saltos pegan mucho más fuerte."

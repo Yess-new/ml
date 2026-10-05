@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearDef" format=3]
+
+[ext_resource type="Script" path="res://data/gear_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"hammerIron"
+display_name = "Martillo de hierro"
+slot = &"hammer"
+power = 3
+description = "Pesado y contundente: los martillazos hacen mucho más daño."

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://bveayop4laqkt"]
+
+[ext_resource type="Script" uid="uid://0fe0prqojhvm" path="res://Combate/enemy_data.gd" id="1_data"]
+[ext_resource type="Script" uid="uid://cdb5s6uq05a0n" path="res://Combate/patrones/lunge_pattern.gd" id="2_lunge"]
+
+[resource]
+script = ExtResource("1_data")
+display_name = "Bowser"
+pattern = ExtResource("2_lunge")

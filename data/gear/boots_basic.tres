@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearDef" format=3]
+
+[ext_resource type="Script" path="res://data/gear_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"bootsBasic"
+display_name = "Zapatos sencillos"
+slot = &"boots"
+power = 1
+description = "Unos zapatos de diario. Dan un poco de impulso a los saltos."

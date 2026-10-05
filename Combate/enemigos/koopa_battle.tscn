@@ -1,0 +1,16 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Combate/battle_enemy.gd" id="1_enemy"]
+[ext_resource type="Resource" path="res://Combate/enemigos/koopa.tres" id="2_data"]
+
+[node name="Koopa" type="Node2D"]
+script = ExtResource("1_enemy")
+data = ExtResource("2_data")
+body_size = Vector2(46, 78)
+placeholder_color = Color(0.3, 0.75, 0.35, 1)
+
+[node name="Shadow" type="Sprite2D" parent="."]
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Visual"]

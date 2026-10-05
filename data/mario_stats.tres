@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://soy0qkkr1421"]
+
+[ext_resource type="Script" uid="uid://dkclxc8l7r4r4" path="res://data/character_stats.gd" id="1_5vp23"]
+[ext_resource type="Texture2D" path="res://Sprite-0001.png" id="2_port"]
+
+[resource]
+script = ExtResource("1_5vp23")
+portrait = ExtResource("2_port")

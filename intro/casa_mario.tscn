@@ -1,0 +1,238 @@
+[gd_scene format=3 uid="uid://bx7ii77410c0q"]
+
+[ext_resource type="PackedScene" uid="uid://yfyo4r3b7a0g" path="res://overworld/test_map.tscn" id="1_niqhg"]
+[ext_resource type="Texture2D" uid="uid://ba8yjvp12lg2h" path="res://Sprites/intro/103254.png" id="2_lvhhd"]
+[ext_resource type="PackedScene" uid="uid://bgeiit77hjwcg" path="res://overworld/hero.tscn" id="3_pcu0x"]
+[ext_resource type="PackedScene" path="res://overworld/height_platform.tscn" id="4_w2inl"]
+[ext_resource type="PackedScene" uid="uid://dkdn878tqcbpo" path="res://overworld/luigi.tscn" id="5_yxrer"]
+[ext_resource type="PackedScene" path="res://overworld/height_ramp.tscn" id="6_oiuwv"]
+[ext_resource type="PackedScene" uid="uid://baqwmw3xhpw3o" path="res://overworld/solid_wall.tscn" id="7_do7kg"]
+[ext_resource type="Script" uid="uid://cooajiymyposj" path="res://overworld/party_mode.gd" id="9_pvn5l"]
+[ext_resource type="Texture2D" uid="uid://bjds03chcc5wx" path="res://Sprites/intro/Captura de pantalla 2026-10-04 125044.png" id="9_w2inl"]
+[ext_resource type="Script" uid="uid://un7lfat6fibk" path="res://overworld/cutscene/cutscene.gd" id="10_yxrer"]
+[ext_resource type="Script" uid="uid://bx3rc6u2wsjax" path="res://overworld/cutscene/steps/paso_mostrar.gd" id="11_ick31"]
+[ext_resource type="Script" uid="uid://sr63acv5c2w7" path="res://overworld/cutscene/steps/paso_efecto.gd" id="11_oiuwv"]
+[ext_resource type="Script" uid="uid://btcol063c7mfy" path="res://overworld/cutscene/cutscene_trigger.gd" id="12_do7kg"]
+[ext_resource type="Script" uid="uid://bmmphejn4u8n3" path="res://overworld/cutscene/steps/paso_emote.gd" id="13_j4rac"]
+[ext_resource type="Script" uid="uid://q4lsfxen8orb" path="res://overworld/cutscene/steps/paso_sonido.gd" id="14_4y6pn"]
+[ext_resource type="Script" uid="uid://mpiw2wbg6a5l" path="res://overworld/cutscene/steps/paso_saltar.gd" id="15_0rau8"]
+[ext_resource type="Script" uid="uid://cijy867lyrl65" path="res://overworld/cutscene/steps/paso_colocar.gd" id="16_qm48q"]
+[ext_resource type="Script" uid="uid://bpj5t2hm782b5" path="res://overworld/cutscene/steps/paso_mover.gd" id="17_jask6"]
+[ext_resource type="Script" uid="uid://m1mrxlbtp3dl" path="res://overworld/cutscene/steps/paso_historia.gd" id="18_xecj1"]
+[ext_resource type="Script" uid="uid://dl57dtfngyclt" path="res://intro/intro_sequence.gd" id="19_0cvy4"]
+[ext_resource type="Script" uid="uid://bvb82memntkf1" path="res://intro/intro_slide.gd" id="20_1brlh"]
+[ext_resource type="Script" uid="uid://b0x8b7wgo8g88" path="res://overworld/cutscene/steps/paso_ir_a.gd" id="21_j4rac"]
+
+[sub_resource type="Resource" id="Resource_0ioff"]
+script = ExtResource("20_1brlh")
+texts = ["HOLA MARIO!!!"]
+metadata/_custom_type_script = "uid://bvb82memntkf1"
+
+[sub_resource type="Resource" id="Resource_n2uhg"]
+script = ExtResource("19_0cvy4")
+slides = Array[ExtResource("20_1brlh")]([SubResource("Resource_0ioff")])
+metadata/_custom_type_script = "uid://dl57dtfngyclt"
+
+[sub_resource type="Animation" id="Animation_main"]
+resource_name = "main"
+length = 5.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cs"]
+_data = {
+&"main": SubResource("Animation_main")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_trig"]
+size = Vector2(240, 120)
+
+[node name="casa mario" type="Node2D" unique_id=715304109]
+y_sort_enabled = true
+position = Vector2(-26, 43)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="." unique_id=928460703 instance=ExtResource("1_niqhg")]
+position = Vector2(-688, 59)
+scale = Vector2(3.660274, 3.6602743)
+texture = ExtResource("2_lvhhd")
+metadata/_edit_lock_ = true
+
+[node name="Hero" parent="." unique_id=1783186282 instance=ExtResource("3_pcu0x")]
+position = Vector2(-406, -182)
+scale = Vector2(1, 1)
+
+[node name="HeightPlatform11" parent="." unique_id=608029348 node_paths=PackedStringArray("on_top_of") instance=ExtResource("4_w2inl")]
+position = Vector2(-599, -77)
+size = Vector2(625, 571)
+height = 299.0
+on_top_of = NodePath("../HeightPlatform7")
+invisible = true
+
+[node name="HeightPlatform7" parent="." unique_id=767718108 instance=ExtResource("4_w2inl")]
+position = Vector2(-870, 450)
+size = Vector2(721, 383)
+height = 53.0
+invisible = true
+
+[node name="HeightPlatform8" parent="." unique_id=1371455160 node_paths=PackedStringArray("on_top_of") instance=ExtResource("4_w2inl")]
+position = Vector2(-327, -58)
+size = Vector2(138, 159)
+height = 45.0
+on_top_of = NodePath("../HeightPlatform11")
+invisible = true
+
+[node name="HeightPlatform9" parent="." unique_id=480404233 node_paths=PackedStringArray("on_top_of") instance=ExtResource("4_w2inl")]
+position = Vector2(-590, -53)
+size = Vector2(138, 159)
+height = 45.0
+on_top_of = NodePath("../HeightPlatform11")
+invisible = true
+
+[node name="HeightPlatform5" parent="." unique_id=978247596 instance=ExtResource("4_w2inl")]
+position = Vector2(2567, -1341)
+size = Vector2(2382, 455)
+height = 53.0
+invisible = true
+
+[node name="Luigi" parent="." unique_id=749041045 node_paths=PackedStringArray("leader") instance=ExtResource("5_yxrer")]
+position = Vector2(624, 253)
+scale = Vector2(1, 1)
+leader = NodePath("../Hero")
+follow_distance = 95.0
+stay_when_leader_backs = true
+
+[node name="HeightRamp" parent="." unique_id=1708503040 instance=ExtResource("6_oiuwv")]
+position = Vector2(29, -73)
+size = Vector2(280, 175)
+direction = 1
+high_height = 299.0
+
+[node name="HeightRamp2" parent="." unique_id=946359506 instance=ExtResource("6_oiuwv")]
+position = Vector2(-152, 452)
+size = Vector2(98, 377)
+direction = 1
+high_height = 53.0
+
+[node name="SolidWall2" parent="." unique_id=1082680099 instance=ExtResource("7_do7kg")]
+position = Vector2(-21, 1052)
+size = Vector2(2586, 294)
+
+[node name="SolidWall3" parent="." unique_id=489140081 instance=ExtResource("7_do7kg")]
+position = Vector2(-29.75, -845)
+size = Vector2(2655.5, 183.5)
+
+[node name="SolidWall4" parent="." unique_id=721960513 instance=ExtResource("7_do7kg")]
+position = Vector2(1241, 74)
+size = Vector2(161, 1690.5)
+metadata/_edit_lock_ = true
+
+[node name="SolidWall5" parent="." unique_id=1698234617 instance=ExtResource("7_do7kg")]
+position = Vector2(-1325, 48.75)
+size = Vector2(192, 1740.5)
+
+[node name="PartyMode" type="Node" parent="." unique_id=273019390]
+script = ExtResource("9_pvn5l")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=172198362]
+position = Vector2(-255, -360)
+scale = Vector2(0.29423466, 0.29423466)
+texture = ExtResource("9_w2inl")
+
+[node name="Carta" type="Sprite2D" parent="." unique_id=1470964258]
+visible = false
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1506036951]
+position = Vector2(950, 364)
+
+[node name="Cinematica1" type="Node2D" parent="." unique_id=1226466643]
+position = Vector2(-271, 81)
+script = ExtResource("10_yxrer")
+start_black = true
+
+[node name="Pasos" type="Node2D" parent="Cinematica1" unique_id=1923864801]
+
+[node name="Mostrar1" type="Node2D" parent="Cinematica1/Pasos" unique_id=543361687]
+script = ExtResource("11_ick31")
+actor = NodePath("../../../Hero")
+esperar = false
+
+[node name="Mostrar2" type="Node2D" parent="Cinematica1/Pasos" unique_id=651808249]
+script = ExtResource("11_ick31")
+actor = NodePath("../../../Luigi")
+esperar = false
+
+[node name="Efecto1" type="Node2D" parent="Cinematica1/Pasos" unique_id=101010362]
+script = ExtResource("11_oiuwv")
+tipo = 3
+duracion = 3.8499999999999996
+retraso = 3.0
+
+[node name="Emocion1" type="Node2D" parent="Cinematica1/Pasos" unique_id=320461125]
+script = ExtResource("13_j4rac")
+actor = NodePath("../../../Sprite2D2")
+simbolo = "..."
+duracion = 5.0
+
+[node name="Sonido1" type="Node2D" parent="Cinematica1/Pasos" unique_id=1608072279]
+script = ExtResource("14_4y6pn")
+
+[node name="Mostrar3" type="Node2D" parent="Cinematica1/Pasos" unique_id=1915801205]
+script = ExtResource("11_ick31")
+actor = NodePath("../../../Hero")
+accion = 0
+
+[node name="Emocion2" type="Node2D" parent="Cinematica1/Pasos" unique_id=1318046115]
+script = ExtResource("13_j4rac")
+actor = NodePath("../../../Hero")
+esperar = false
+
+[node name="Saltar1" type="Node2D" parent="Cinematica1/Pasos" unique_id=518545840]
+script = ExtResource("15_0rau8")
+actor = NodePath("../../../Hero")
+
+[node name="Colocar1" type="Node2D" parent="Cinematica1/Pasos" unique_id=10249106]
+position = Vector2(1166, 284)
+script = ExtResource("16_qm48q")
+actor = NodePath("../../../Luigi")
+hacerlo_visible = true
+
+[node name="Mover1" type="Node2D" parent="Cinematica1/Pasos" unique_id=491466900]
+position = Vector2(660, 10)
+script = ExtResource("17_jask6")
+actor = NodePath("../../../Luigi")
+
+[node name="Mover2" type="Node2D" parent="Cinematica1/Pasos" unique_id=510757675]
+position = Vector2(214, -411)
+script = ExtResource("17_jask6")
+actor = NodePath("../../../Luigi")
+
+[node name="Mover3" type="Node2D" parent="Cinematica1/Pasos" unique_id=2089506049]
+position = Vector2(71, -277)
+script = ExtResource("17_jask6")
+actor = NodePath("../../../Luigi")
+
+[node name="Mostrar4" type="Node2D" parent="Cinematica1/Pasos" unique_id=741419453]
+script = ExtResource("11_ick31")
+actor = NodePath("../../../Carta")
+accion = 0
+
+[node name="Historia1" type="Node2D" parent="Cinematica1/Pasos" unique_id=1467949542]
+script = ExtResource("18_xecj1")
+secuencia = SubResource("Resource_n2uhg")
+
+[node name="IrA1" type="Node2D" parent="Cinematica1/Pasos" unique_id=1995621914]
+script = ExtResource("21_j4rac")
+escena = "uid://jj6rjc3ii45m"
+
+[node name="Camera" type="Camera2D" parent="Cinematica1" unique_id=938852774]
+enabled = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cinematica1" unique_id=1650961359]
+libraries/ = SubResource("AnimationLibrary_cs")
+
+[node name="Trigger" type="Area2D" parent="Cinematica1" unique_id=519707423]
+monitorable = false
+script = ExtResource("12_do7kg")
+
+[node name="Zona" type="CollisionShape2D" parent="Cinematica1/Trigger" unique_id=65227857]
+shape = SubResource("RectangleShape2D_trig")
+debug_color = Color(1, 0.55, 0, 0.35)

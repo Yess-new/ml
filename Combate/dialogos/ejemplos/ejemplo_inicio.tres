@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="BattleDialogue" format=3]
+
+[ext_resource type="Script" path="res://Combate/dialogos/battle_dialogue.gd" id="1_bd"]
+
+[resource]
+script = ExtResource("1_bd")
+lines = PackedStringArray("¡Grrr! ¡De aquí no pasáis, fontaneros!")
+speaker = "Enemigo"

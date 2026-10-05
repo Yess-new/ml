@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cw5yntxr0nfsu"]
+
+[ext_resource type="Script" uid="uid://df4it5ge3xgu1" path="res://Combate/battle_enemy.gd" id="1_enemy"]
+[ext_resource type="Resource" uid="uid://bveayop4laqkt" path="res://Combate/enemigos/goomba.tres" id="2_data"]
+[ext_resource type="Texture2D" uid="uid://btk2mfvmxdfc4" path="res://Sprite-0002 (2).png" id="3_ap5hp"]
+
+[node name="Bowser" type="Node2D" unique_id=1114310828]
+script = ExtResource("1_enemy")
+data = ExtResource("2_data")
+body_size = Vector2(114, 146)
+placeholder_color = Color(0.8509804, 0.3019608, 0.3019608, 0)
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=326891658]
+
+[node name="Visual" type="Node2D" parent="." unique_id=487851552]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Visual" unique_id=741891402]
+
+[node name="Sprite0002(2)" type="Sprite2D" parent="Visual" unique_id=769081485]
+position = Vector2(-10.000002, -86)
+scale = Vector2(2.5049508, 2.5049508)
+texture = ExtResource("3_ap5hp")

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://minudtmnm5hi"]
+
+[ext_resource type="Script" uid="uid://dkclxc8l7r4r4" path="res://data/character_stats.gd" id="1_ld1u5"]
+[ext_resource type="Texture2D" path="res://Sprite-0002.png" id="2_port"]
+
+[resource]
+script = ExtResource("1_ld1u5")
+id = &"luigi"
+display_name = "Luigi"
+max_hp = 26
+max_tp = 15
+power = 8
+defense = 5
+turn_speed = 7
+stache = 8
+jump_action = &"jump_luigi"
+shirt_color = Color(0.263, 0.69, 0.278, 1)
+portrait = ExtResource("2_port")

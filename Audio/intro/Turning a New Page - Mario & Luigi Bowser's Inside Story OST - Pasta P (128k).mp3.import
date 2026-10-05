@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bymr1wlfkwpd7"
+path="res://.godot/imported/Turning a New Page - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3-d52995e251244041efb1397d0c96a6c1.mp3str"
+
+[deps]
+
+source_file="res://Audio/intro/Turning a New Page - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3"
+dest_files=["res://.godot/imported/Turning a New Page - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3-d52995e251244041efb1397d0c96a6c1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

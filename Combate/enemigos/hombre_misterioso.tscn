@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bycywapmuu327"]
+
+[ext_resource type="Script" uid="uid://df4it5ge3xgu1" path="res://Combate/battle_enemy.gd" id="1_enemy"]
+[ext_resource type="Resource" path="res://Combate/enemigos/goomba.tres" id="2_data"]
+
+[node name="HombreMisterioso" type="Node2D" unique_id=1505008496]
+script = ExtResource("1_enemy")
+data = ExtResource("2_data")
+body_size = Vector2(56, 46)
+placeholder_color = Color(0.6, 0.36, 0.18, 1)
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1588043098]
+
+[node name="Visual" type="Node2D" parent="." unique_id=1835657330]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Visual" unique_id=398709281]

@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="IntroSequence" format=3 uid="uid://bnib3y74j6lrn"]
+
+[ext_resource type="AudioStream" uid="uid://cmr5jes51ddpp" path="res://Audio/intro/Toad Town's Ruins DX - Mario & Luigi Partners in Time 3DS [FANMADE] - TCMusicVGM (128k).mp3" id="1_bgiyw"]
+[ext_resource type="Script" uid="uid://dl57dtfngyclt" path="res://intro/intro_sequence.gd" id="1_seq"]
+[ext_resource type="Script" uid="uid://bvb82memntkf1" path="res://intro/intro_slide.gd" id="2_slide"]
+[ext_resource type="Texture2D" uid="uid://cco8knbfwg2lc" path="res://Sprites/intro/ilustracion/1.png" id="4_8hpja"]
+[ext_resource type="Texture2D" uid="uid://bum86gcjw22y3" path="res://Sprites/intro/ilustracion/luz.png" id="5_m8jt3"]
+[ext_resource type="Texture2D" uid="uid://cin6hu72pmpia" path="res://Sprites/intro/ilustracion/2.jpg" id="6_kv7u0"]
+[ext_resource type="Texture2D" uid="uid://dt08cspi6fx4g" path="res://Sprites/intro/ilustracion/Ilustración2.png" id="7_tcipl"]
+[ext_resource type="Texture2D" uid="uid://diexgrqp025tp" path="res://Sprites/intro/ilustracion/guerra.png" id="8_4c4h0"]
+[ext_resource type="Texture2D" uid="uid://db33y5ng0u2ec" path="res://Sprites/intro/ilustracion/sello.png" id="9_ad10g"]
+[ext_resource type="Texture2D" uid="uid://070nrum8mmdl" path="res://Sprites/intro/ilustracion/comunicacion.png" id="10_cwvfc"]
+[ext_resource type="Texture2D" uid="uid://cya32pyl46ni8" path="res://Sprites/intro/ilustracion/castillo.png" id="11_dkcrp"]
+
+[sub_resource type="Resource" id="Resource_s1"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("Desde generaciónes, existe una vieja historia que dice así:")
+bg_color = Color(0.02, 0.03, 0.1, 1)
+
+[sub_resource type="Resource" id="Resource_s2"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"En estas tierras, inclusive antes de la fundación de este reino, existía un resplandor que era capaz de cumplir cualquier anhelo\"")
+background = ExtResource("4_8hpja")
+bg_color = Color(0.03, 0.1, 0.18, 1)
+
+[sub_resource type="Resource" id="Resource_s3"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Se le apodó como: el brillo estelar\"", "\"era una luz tan fuerte, que cumplía cualquier deseo con tan solo acercar la mano y reclamar tu anhelo\"")
+background = ExtResource("5_m8jt3")
+bg_color = Color(0.16, 0.12, 0.03, 1)
+
+[sub_resource type="Resource" id="Resource_s4"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Algunos teorizaban que se trataba de una bendición otorgada por las primeras estrellas guardianas, seres de pura bondad, de ahí el nombre que se le puso.\"", "\"Lo habrían hecho con tal de dar esperanza y buena suerte en momentos de crisis.\"")
+background = ExtResource("6_kv7u0")
+bg_color = Color(0.18, 0.08, 0.05, 1)
+
+[sub_resource type="Resource" id="Resource_s5"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Sin embargo, de haber sido ese su propósito, habrían fallado de manera estrepitosa.\"", "\"lo único que trajo fue la aparición de intereses egoístas e inclusive malignos.\"")
+background = ExtResource("7_tcipl")
+bg_color = Color(0.1, 0.04, 0.18, 1)
+
+[sub_resource type="Resource" id="Resource_s6"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Las guerras no tardaron en inundar cada rincón, muchas relaciones entre pueblos y reinos que habían tardado tanto tiempo en crearse, se vieron esfumadas en cuanto el resplandor de lo casi divino cruzó sus miradas.\"")
+background = ExtResource("8_4c4h0")
+bg_color = Color(0.01, 0.01, 0.04, 1)
+
+[sub_resource type="Resource" id="Resource_5pbp8"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Las estrellas guardianas de su tiempo, sin poder quedarse de brazos cruzados, intervinieron.\"", "\"Y como castigo para aquellos que habían despojado cuerpo y alma por tal poder, lo sellaron en aquella pradera donde se descubrió por primera vez\"")
+background = ExtResource("9_ad10g")
+metadata/_custom_type_script = "uid://bvb82memntkf1"
+
+[sub_resource type="Resource" id="Resource_bgiyw"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Los espíritus estrella comunicaron que el sello duraría mil años, dejándole aquel resplandor a sus descendientes.\"", "\"Esperando que, llegado el momento, hayan encontrado la suficiente responsabilidad y sabiduría para controlar tal poder.\"")
+background = ExtResource("10_cwvfc")
+metadata/_custom_type_script = "uid://bvb82memntkf1"
+
+[sub_resource type="Resource" id="Resource_34v6p"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("\"Mientras tanto, ordenaron a unos pocos afortunados a zfundar un reino donde se selló el brillo estelar, que hoy en día es lo que conocemos como reino del sol, nuestro hogar\"")
+background = ExtResource("11_dkcrp")
+metadata/_custom_type_script = "uid://bvb82memntkf1"
+
+[sub_resource type="Resource" id="Resource_vadxn"]
+script = ExtResource("2_slide")
+texts = PackedStringArray("En unos días, habrán pasado mil años desde esos eventos, es decir, que el sello está a punto de liberarse", "Nadie sabe muy bien qué va a ocurrir, solo esperemos que la decisión de las estrellas de confiar en nosotros haya sido lo mejor.")
+metadata/_custom_type_script = "uid://bvb82memntkf1"
+
+[resource]
+script = ExtResource("1_seq")
+slides = Array[ExtResource("2_slide")]([SubResource("Resource_s1"), SubResource("Resource_s2"), SubResource("Resource_s3"), SubResource("Resource_s4"), SubResource("Resource_s5"), SubResource("Resource_s6"), SubResource("Resource_5pbp8"), SubResource("Resource_bgiyw"), SubResource("Resource_34v6p"), SubResource("Resource_vadxn")])
+music = ExtResource("1_bgiyw")

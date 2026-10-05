@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://447mcicjttd0"]
+
+[ext_resource type="Script" uid="uid://cdb5s6uq05a0n" path="res://Combate/patrones/lunge_pattern.gd" id="1_57pl5"]
+[ext_resource type="Script" uid="uid://0fe0prqojhvm" path="res://Combate/enemy_data.gd" id="2_uvdpb"]
+
+[resource]
+script = ExtResource("2_uvdpb")
+display_name = "Hombre misterioso"
+max_hp = 120
+power = 10
+turn_speed = 2
+stache = 0
+pattern = ExtResource("1_57pl5")

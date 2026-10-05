@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnrq5g308kah"
+path="res://.godot/imported/Peach's Castle - Mario & Luigi Bowser's Inside Story - Restored - [ Fawff ] (128k).mp3-43d05b77131d9062c9d4acb952412604.mp3str"
+
+[deps]
+
+source_file="res://Audio/overworld/Peach's Castle - Mario & Luigi Bowser's Inside Story - Restored - [ Fawff ] (128k).mp3"
+dest_files=["res://.godot/imported/Peach's Castle - Mario & Luigi Bowser's Inside Story - Restored - [ Fawff ] (128k).mp3-43d05b77131d9062c9d4acb952412604.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

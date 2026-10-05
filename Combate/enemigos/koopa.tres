@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://Combate/enemy_data.gd" id="1_data"]
+[ext_resource type="Script" path="res://Combate/patrones/shell_kick_pattern.gd" id="2_shell"]
+
+[resource]
+script = ExtResource("1_data")
+display_name = "Koopa"
+max_hp = 24
+power = 7
+defense = 2
+turn_speed = 5
+stache = 4
+coin_reward = 5
+exp_reward = 4
+drops = {
+"mushroom": 0.2,
+"syrup": 0.2
+}
+pattern = ExtResource("2_shell")

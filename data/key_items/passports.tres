@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="KeyItemDef" format=3]
+
+[ext_resource type="Script" path="res://data/key_item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"passports"
+display_name = "Pasaportes"
+description = "Los pasaportes de Mario y Luigi. Sus datos se ven en el apartado Estado."

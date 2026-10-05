@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dgdpgbwwtylgw"]
+
+[ext_resource type="Script" uid="uid://cobvi7ivnyot2" path="res://Combate/battle.gd" id="1_battle"]
+[ext_resource type="PackedScene" uid="uid://cuygjrfcq0jpn" path="res://ui/battle_ui.tscn" id="2_ui"]
+[ext_resource type="PackedScene" uid="uid://f3sifif53w5b" path="res://Combate/actores/mario_battle.tscn" id="4_mario"]
+[ext_resource type="PackedScene" uid="uid://c5jixbxqfi6k7" path="res://Combate/actores/luigi_battle.tscn" id="5_luigi"]
+[ext_resource type="PackedScene" uid="uid://cw5yntxr0nfsu" path="res://Combate/enemigos/goomba_battle.tscn" id="6_goomba"]
+[ext_resource type="PackedScene" path="res://Combate/enemigos/koopa_battle.tscn" id="6_m43mo"]
+
+[node name="Battle" type="Node2D" unique_id=486667630]
+script = ExtResource("1_battle")
+
+[node name="Background" type="Node2D" parent="." unique_id=1091255601]
+z_index = -10
+
+[node name="EnemySpots" type="Node2D" parent="." unique_id=522881397]
+
+[node name="Spot1" type="Marker2D" parent="EnemySpots" unique_id=208260477]
+position = Vector2(860, 470)
+
+[node name="Spot2" type="Marker2D" parent="EnemySpots" unique_id=7335620]
+position = Vector2(960, 380)
+
+[node name="Spot3" type="Marker2D" parent="EnemySpots" unique_id=659436677]
+position = Vector2(960, 560)
+
+[node name="Actors" type="Node2D" parent="." unique_id=1335808615]
+y_sort_enabled = true
+
+[node name="Mario" parent="Actors" unique_id=1329136565 instance=ExtResource("4_mario")]
+position = Vector2(257, 403)
+body_size = Vector2(34, 102)
+
+[node name="Luigi" parent="Actors" unique_id=1686200560 instance=ExtResource("5_luigi")]
+position = Vector2(196, 499)
+body_size = Vector2(34, 102)
+
+[node name="KoopaTest" parent="Actors" unique_id=1639645723 instance=ExtResource("6_m43mo")]
+position = Vector2(960, 560)
+
+[node name="Bowser" parent="Actors" unique_id=1114310828 instance=ExtResource("6_goomba")]
+position = Vector2(860, 470)
+
+[node name="BattleUI" parent="." unique_id=767995105 instance=ExtResource("2_ui")]
+
+[node name="Camera" type="Camera2D" parent="." unique_id=661983864]
+position = Vector2(576, 324)

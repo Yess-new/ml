@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmr5jes51ddpp"
+path="res://.godot/imported/Toad Town's Ruins DX - Mario & Luigi Partners in Time 3DS [FANMADE] - TCMusicVGM (128k).mp3-33facad094563f1c4835047bd8ec49d9.mp3str"
+
+[deps]
+
+source_file="res://Audio/intro/Toad Town's Ruins DX - Mario & Luigi Partners in Time 3DS [FANMADE] - TCMusicVGM (128k).mp3"
+dest_files=["res://.godot/imported/Toad Town's Ruins DX - Mario & Luigi Partners in Time 3DS [FANMADE] - TCMusicVGM (128k).mp3-33facad094563f1c4835047bd8ec49d9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

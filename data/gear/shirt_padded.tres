@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearDef" format=3]
+
+[ext_resource type="Script" path="res://data/gear_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"shirtPadded"
+display_name = "Camisa acolchada"
+slot = &"shirt"
+defense = 3
+description = "Relleno grueso que frena bien los golpes enemigos."

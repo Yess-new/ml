@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jjnroalrhdwr"
+path="res://.godot/imported/On To the Next Adventure! - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3-d4c9cb2f1bf5f86f2c68fa84858f8291.mp3str"
+
+[deps]
+
+source_file="res://Audio/intro/On To the Next Adventure! - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3"
+dest_files=["res://.godot/imported/On To the Next Adventure! - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3-d4c9cb2f1bf5f86f2c68fa84858f8291.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

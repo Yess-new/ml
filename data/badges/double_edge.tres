@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BadgeDef" format=3]
+
+[ext_resource type="Script" path="res://data/badge_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"doubleEdge"
+display_name = "Medalla Doble Filo"
+bp = 3
+description = "Quien la lleve hará el doble de daño... y recibirá el doble."
+color = Color(0.878, 0.278, 0.247, 1)

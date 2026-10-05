@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://f3sifif53w5b"]
+
+[ext_resource type="Script" uid="uid://in41slobmwpv" path="res://Combate/battle_hero.gd" id="1_hero"]
+[ext_resource type="Resource" uid="uid://soy0qkkr1421" path="res://data/mario_stats.tres" id="2_stats"]
+[ext_resource type="Texture2D" uid="uid://dlmmx165yri5j" path="res://Sprite-0001.png" id="3_ovlq2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovlq2"]
+
+[node name="Mario" type="Node2D" unique_id=1042067067]
+script = ExtResource("1_hero")
+stats = ExtResource("2_stats")
+placeholder_color = Color(0.878, 0.278, 0.247, 1)
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1444872451]
+
+[node name="Visual" type="Node2D" parent="." unique_id=1615706990]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Visual" unique_id=1338194871]
+visible = false
+sprite_frames = SubResource("SpriteFrames_ovlq2")
+
+[node name="HammerPivot" type="Node2D" parent="Visual" unique_id=1738654576]
+position = Vector2(12, -34)
+
+[node name="Hammer" type="Sprite2D" parent="Visual/HammerPivot" unique_id=429589090]
+centered = false
+
+[node name="Sprite0001" type="Sprite2D" parent="Visual" unique_id=778484210]
+position = Vector2(11.000004, -48.000004)
+scale = Vector2(1.8717948, 1.8717948)
+texture = ExtResource("3_ovlq2")

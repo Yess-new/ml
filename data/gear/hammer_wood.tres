@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearDef" format=3]
+
+[ext_resource type="Script" path="res://data/gear_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"hammerWood"
+display_name = "Martillo de madera"
+slot = &"hammer"
+power = 1
+description = "Un martillo ligero de madera. Cumple su función."

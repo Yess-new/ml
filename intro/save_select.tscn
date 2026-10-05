@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://1l3ox3t56stn"]
+
+[ext_resource type="Script" uid="uid://b0om0suvd85dg" path="res://intro/save_select.gd" id="1_s"]
+[ext_resource type="AudioStream" uid="uid://bymr1wlfkwpd7" path="res://Audio/intro/Turning a New Page - Mario & Luigi Bowser's Inside Story OST - Pasta P (128k).mp3" id="2_h06oq"]
+
+[node name="SaveSelect" type="Control" unique_id=1344845639]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s")
+start_scene = "uid://bx7ii77410c0q"
+music = ExtResource("2_h06oq")

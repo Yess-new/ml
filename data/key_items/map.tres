@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="KeyItemDef" format=3]
+
+[ext_resource type="Script" path="res://data/key_item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"map"
+display_name = "Mapa de la pradera"
+description = "Un mapa dibujado a mano de la zona. Se consulta en el apartado Mapa."

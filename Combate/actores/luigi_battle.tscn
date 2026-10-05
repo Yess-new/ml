@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c5jixbxqfi6k7"]
+
+[ext_resource type="Script" uid="uid://in41slobmwpv" path="res://Combate/battle_hero.gd" id="1_hero"]
+[ext_resource type="Resource" uid="uid://minudtmnm5hi" path="res://data/luigi_stats.tres" id="2_stats"]
+[ext_resource type="Texture2D" uid="uid://be4esoycx2pta" path="res://Sprite-0002.png" id="3_vvldc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_34faw"]
+
+[node name="Luigi" type="Node2D" unique_id=1930539309]
+script = ExtResource("1_hero")
+stats = ExtResource("2_stats")
+body_size = Vector2(34, 84)
+placeholder_color = Color(0.263, 0.69, 0.278, 1)
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=2700693]
+
+[node name="Visual" type="Node2D" parent="." unique_id=422955453]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Visual" unique_id=1308630788]
+sprite_frames = SubResource("SpriteFrames_34faw")
+
+[node name="HammerPivot" type="Node2D" parent="Visual" unique_id=1120966605]
+position = Vector2(12, -34)
+
+[node name="Hammer" type="Sprite2D" parent="Visual/HammerPivot" unique_id=1438115701]
+centered = false
+
+[node name="Sprite0002" type="Sprite2D" parent="Visual" unique_id=169124178]
+position = Vector2(3, -60)
+scale = Vector2(1.8571428, 1.8571427)
+texture = ExtResource("3_vvldc")
