@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/pause_menu.gd" id="1_script"]
+[ext_resource type="Script" path="res://ui/menu_section.gd" id="2_sec"]
+[ext_resource type="Script" path="res://data/character_stats.gd" id="3_stats"]
+[ext_resource type="Script" path="res://data/key_item_def.gd" id="4_key"]
+[ext_resource type="Resource" path="res://ui/pause_menu_style.tres" id="5_style"]
+[ext_resource type="Resource" path="res://ui/menu/section_items.tres" id="6_items"]
+[ext_resource type="Resource" path="res://ui/menu/section_gear.tres" id="7_gear"]
+[ext_resource type="Resource" path="res://ui/menu/section_badges.tres" id="8_badges"]
+[ext_resource type="Resource" path="res://ui/menu/section_stats.tres" id="9_stats"]
+[ext_resource type="Resource" path="res://ui/menu/section_map.tres" id="10_map"]
+[ext_resource type="Resource" path="res://data/luigi_stats.tres" id="11_luigi"]
+[ext_resource type="Resource" path="res://data/mario_stats.tres" id="12_mario"]
+[ext_resource type="Resource" path="res://data/key_items/map.tres" id="13_kmap"]
+[ext_resource type="Resource" path="res://data/key_items/passports.tres" id="14_kpass"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+layer = 100
+script = ExtResource("1_script")
+style = ExtResource("5_style")
+sections = Array[ExtResource("2_sec")]([ExtResource("6_items"), ExtResource("7_gear"), ExtResource("8_badges"), ExtResource("9_stats"), ExtResource("10_map")])
+heroes = Array[ExtResource("3_stats")]([ExtResource("11_luigi"), ExtResource("12_mario")])
+key_items = Array[ExtResource("4_key")]([ExtResource("13_kmap"), ExtResource("14_kpass")])

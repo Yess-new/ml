@@ -1,0 +1,370 @@
+[gd_scene format=3 uid="uid://cuygjrfcq0jpn"]
+
+[ext_resource type="Script" uid="uid://cknfi4vxfg5wy" path="res://ui/battle_ui.gd" id="1_ui"]
+[ext_resource type="PackedScene" uid="uid://ds42q4wirgcf5" path="res://ui/hero_card.tscn" id="2_card"]
+[ext_resource type="PackedScene" path="res://ui/dodge_button.tscn" id="3_dodge"]
+[ext_resource type="PackedScene" uid="uid://c3q4ueahbewbm" path="res://ui/action_block.tscn" id="4_block"]
+[ext_resource type="Script" uid="uid://cl538uuqvnjar" path="res://ui/rank_badge.gd" id="5_rank"]
+[ext_resource type="Texture2D" uid="uid://c7u6i1parffh5" path="res://Sprites/combate/fx/image (2).png" id="6_a8ln5"]
+[ext_resource type="Texture2D" uid="uid://bq58eane0tu8x" path="res://Sprites/combate/fx/image (3).png" id="7_gpmca"]
+[ext_resource type="Texture2D" uid="uid://c5vyka3p80mtv" path="res://Sprites/combate/fx/image (4).png" id="8_66yy3"]
+[ext_resource type="Texture2D" uid="uid://bhffycxnhd4mn" path="res://Sprites/combate/fx/image (5).png" id="9_0pfjc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjl4f"]
+resource_local_to_scene = true
+bg_color = Color(0.227, 0.627, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8kkn"]
+resource_local_to_scene = true
+bg_color = Color(0.627, 0.627, 0.627, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xkrhl"]
+resource_local_to_scene = true
+bg_color = Color(1, 0.353, 0.29, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xk5m1"]
+resource_local_to_scene = true
+bg_color = Color(1, 0.69, 0.18, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0tcu"]
+resource_local_to_scene = true
+bg_color = Color(0.29803923, 0.8117647, 0.41568628, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_items"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+bg_color = Color(0.078, 0.149, 0.369, 0.95)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.647, 0.384, 0.169, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msg"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 14.0
+content_margin_bottom = 8.0
+bg_color = Color(0.078, 0.149, 0.369, 0.95)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.788, 0.831, 0.941, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="BattleUI" type="CanvasLayer" unique_id=2094584486]
+script = ExtResource("1_ui")
+
+[node name="Cards" type="Control" parent="." unique_id=1838259160]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 42.0
+offset_top = 531.0
+offset_right = 394.0
+offset_bottom = 619.0
+mouse_filter = 2
+
+[node name="MarioCard" parent="Cards" unique_id=586924755 instance=ExtResource("2_card")]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="LuigiCard" parent="Cards" unique_id=1058834786 instance=ExtResource("2_card")]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 0
+offset_left = 182.0
+offset_right = 352.0
+offset_bottom = 0.0
+
+[node name="DodgeHud" type="VBoxContainer" parent="." unique_id=1482502436]
+offset_left = 20.0
+offset_top = 170.0
+offset_right = 160.0
+offset_bottom = 320.0
+theme_override_constants/separation = 20
+
+[node name="MarioDodge" parent="DodgeHud" unique_id=1501940444 instance=ExtResource("3_dodge")]
+layout_mode = 2
+
+[node name="LuigiDodge" parent="DodgeHud" unique_id=1781632549 instance=ExtResource("3_dodge")]
+layout_mode = 2
+
+[node name="ActionMenu" type="VBoxContainer" parent="." unique_id=2063138099]
+offset_left = 167.0
+offset_top = 144.0
+offset_right = 427.0
+offset_bottom = 234.0
+theme_override_constants/separation = 8
+
+[node name="ActionName" type="Label" parent="ActionMenu" unique_id=557073203]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.882, 0.302, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 29
+text = "Salto"
+horizontal_alignment = 1
+
+[node name="Blocks" type="HBoxContainer" parent="ActionMenu" unique_id=262437419]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Item" parent="ActionMenu/Blocks" unique_id=2093536419 instance=ExtResource("4_block")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gjl4f")
+action_id = &"item"
+display_name = "Objeto"
+color = Color(0.227, 0.627, 1, 1)
+
+[node name="Flee" parent="ActionMenu/Blocks" unique_id=1176387383 instance=ExtResource("4_block")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e8kkn")
+action_id = &"flee"
+display_name = "Huir"
+color = Color(0.627, 0.627, 0.627, 1)
+
+[node name="Jump" parent="ActionMenu/Blocks" unique_id=350613702 instance=ExtResource("4_block")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xkrhl")
+color = Color(1, 0.353, 0.29, 1)
+
+[node name="Hammer" parent="ActionMenu/Blocks" unique_id=1941334357 instance=ExtResource("4_block")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xk5m1")
+action_id = &"hammer"
+display_name = "Martillo"
+color = Color(1, 0.69, 0.18, 1)
+
+[node name="Tandem" parent="ActionMenu/Blocks" unique_id=1972951865 instance=ExtResource("4_block")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_q0tcu")
+action_id = &"tandem"
+display_name = "Tándem"
+color = Color(0.29803923, 0.8117647, 0.41568628, 1)
+
+[node name="TargetArrow" type="Node2D" parent="." unique_id=481180959]
+position = Vector2(860, 380)
+
+[node name="Shape" type="Polygon2D" parent="TargetArrow" unique_id=2029619025]
+color = Color(1, 0.882, 0.302, 1)
+polygon = PackedVector2Array(0, 0, -14, -20, 14, -20)
+
+[node name="ItemPanel" type="Panel" parent="." unique_id=1177114560]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -617.0
+offset_top = 113.0
+offset_right = -53.0
+offset_bottom = 392.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_items")
+
+[node name="ItemDesc" type="Label" parent="ItemPanel" unique_id=1182382016]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 406.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Recupera 10 PV."
+autowrap_mode = 3
+
+[node name="Separator" type="HSeparator" parent="ItemPanel" unique_id=1726004083]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 60.0
+offset_right = 406.0
+offset_bottom = 66.0
+
+[node name="ItemRows" type="Control" parent="ItemPanel" unique_id=68085182]
+anchors_preset = 0
+offset_left = 18.0
+offset_top = 72.0
+offset_right = 406.0
+offset_bottom = 166.0
+mouse_filter = 2
+
+[node name="Row1" type="Label" parent="ItemPanel/ItemRows" unique_id=1255908269]
+layout_mode = 0
+offset_right = 388.0
+offset_bottom = 28.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 18
+text = "► Champiñón   ×3"
+
+[node name="Row2" type="Label" parent="ItemPanel/ItemRows" unique_id=1011342429]
+layout_mode = 0
+offset_top = 31.0
+offset_right = 388.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 18
+text = "   Jarabe   ×2"
+
+[node name="Row3" type="Label" parent="ItemPanel/ItemRows" unique_id=1007187303]
+layout_mode = 0
+offset_top = 62.0
+offset_right = 388.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 18
+text = "   Champiñón 1-Up   ×1"
+
+[node name="MessagePanel" type="Panel" parent="." unique_id=1595922186]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 735.0
+offset_top = -86.0
+offset_right = -16.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_msg")
+
+[node name="Message" type="Label" parent="MessagePanel" unique_id=231639588]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 18
+text = "¡Goomba aparece!"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Celebrations" type="Control" parent="." unique_id=1135541194]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Ok" type="Control" parent="Celebrations" unique_id=81219806]
+anchors_preset = 0
+offset_left = 565.54974
+offset_top = 177.16988
+offset_right = 756.87695
+offset_bottom = 231.8348
+rotation = -0.12217305
+mouse_filter = 2
+script = ExtResource("5_rank")
+texture = ExtResource("6_a8ln5")
+text = ""
+
+[node name="Good" type="Control" parent="Celebrations" unique_id=301566605]
+anchors_preset = 0
+offset_left = 551.0705
+offset_top = 174.89073
+offset_right = 770.58484
+offset_bottom = 237.60912
+rotation = -0.12217305
+mouse_filter = 2
+script = ExtResource("5_rank")
+texture = ExtResource("7_gpmca")
+text = ""
+text_color = Color(0.5, 1, 0.45, 1)
+
+[node name="Great" type="Control" parent="Celebrations" unique_id=1936264773]
+anchors_preset = 0
+offset_left = 531.58234
+offset_top = 171.82315
+offset_right = 789.0347
+offset_bottom = 245.38098
+rotation = -0.12217305
+mouse_filter = 2
+script = ExtResource("5_rank")
+texture = ExtResource("8_66yy3")
+text = ""
+text_color = Color(1, 0.85, 0.2, 1)
+
+[node name="Excellent" type="Control" parent="Celebrations" unique_id=1060542165]
+anchors_preset = 0
+offset_left = 487.20728
+offset_top = 164.83817
+offset_right = 831.0457
+offset_bottom = 263.07773
+rotation = -0.12217305
+mouse_filter = 2
+script = ExtResource("5_rank")
+texture = ExtResource("9_0pfjc")
+text = ""
+text_color = Color(1, 0.4, 0.25, 1)
+font_size = 36
+
+[editable path="Cards/MarioCard"]
+[editable path="Cards/LuigiCard"]

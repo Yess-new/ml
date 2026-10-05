@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MenuSection" format=3]
+
+[ext_resource type="Script" path="res://ui/menu_section.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+kind = "badges"
+display_name = "Medallas"
+description = "Medallas de cada hermano: se equipan gastando puntos de medalla (PM). Se compran en la tienda."
